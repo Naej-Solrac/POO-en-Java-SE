@@ -1,0 +1,18 @@
+elementos:
+clases 
+propiedades
+metodos
+objetos
+
+poo tiene 4 pilares:
+encapsulamiento 
+abstraccion
+herencia
+polimorfismo
+
+tiene mucho que ver con UML (unified modeling language)
+lenguaje de modelado unificado
+
+analisar: observar -> graficar -> programar 
+el UML nos ayudara a graficar
+
