@@ -4,16 +4,19 @@ public class Patient {
     private String name;
     private String email, address, phoneNumber, birthday, blood;
     private double weight, height;
-    Patient (String name, String email) {
+
+    Patient(String name, String email) {
         this.name = name;
         this.email = email;
     }
+
     //54.5
-    public void setWeight (double weight) {
+    public void setWeight(double weight) {
         this.weight = weight;
     }
+
     // 54.5 kg.
-    public String getWeight () {
+    public String getWeight() {
         return this.weight + " Kg. ";
     }
 
@@ -62,10 +65,10 @@ public class Patient {
     }
 
     public void setPhoneNumber(String phoneNumber) {
-        if (phoneNumber.length() > 9 ) {
+        if (phoneNumber.length() > 9) {
             System.out.println("el num debe ser 9 digitos como max");
         } else if (phoneNumber.length() == 8) {
-        this.phoneNumber = phoneNumber;
+            this.phoneNumber = phoneNumber;
         }
     }
 
@@ -84,6 +87,5 @@ public class Patient {
     public void setBlood(String blood) {
         this.blood = blood;
     }
-
 
 }

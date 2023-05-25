@@ -1,3 +1,6 @@
+
+import static UI.UIMenu.*;
+
 public class Main {
     public static void main(String[] args) {
         //showMenu();
@@ -5,8 +8,9 @@ public class Main {
         System.out.println(myDoctor.name);
         System.out.println(myDoctor.speciality);
 
-        Patient patient = new Patient("alejandra", "ale@gmail.com");
+        Patient patient = new Patient("ale","ale@gmail.com");
         patient.setWeight(54.5);
         System.out.println(patient.getWeight());
+
     }
 }
