@@ -16,3 +16,20 @@ lenguaje de modelado unificado
 analisar: observar -> graficar -> programar 
 el UML nos ayudara a graficar
 
+declarar e instanciar un objeto
+Doctor myDoctor = new Doctor();
+myDoctor.name = "jean gonzales";
+myDoctor.showName();
+
+static para que sea global
+sobrecarga: para que dos o mas metodos tengan el mismo nombre pero sus argumentos o valor
+de retorno son diferentes
+sobrecarga de constructores: cuando le pasamos parametros
+
+encapsulamiento: restringir el acceso a una variable// evitar conflico de inconsistencia 
+usamos los modificadores que permiten acceso al parametro dentro de una clase
+modificador   clase   package   subclase    otros
+public		*	*	   *	      *
+protected	*	*	   *	      
+default		*	*
+private		*
