@@ -3,11 +3,14 @@ public class Doctor {
     static int id = 0; //Autoincrement
     String name, speciality;
     Doctor () {
-        System.out.println("calling constructor");
-        id ++;
+        //System.out.println("calling constructor");
+
     }
-    Doctor (String name) {
+    Doctor (String name, String speciality) {
         System.out.println("el nombre del doc es: " + name);
+        id ++;
+        this.name = name;
+        this.speciality = speciality;
     }
     //comportamientos
     public void showName () {
