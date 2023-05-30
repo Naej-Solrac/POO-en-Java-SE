@@ -33,3 +33,11 @@ public		*	*	   *	      *
 protected	*	*	   *	      
 default		*	*
 private		*
+
+getters y setters  //se encargan de validar los parametos o datos q se quieran asignar
+perminen leer y escribir los valores de las variables miembro 
+get obtener, set,o actualizar poner el dato de la variable
+
+Clases Wrapper / objeto primitivo
+Byte,Short, Integer, Long, Float, Double, Character, Boolean, String
+
