@@ -3,6 +3,8 @@ public class User {
     private String name;
     private String email;
     private String phoneNumber;
+    private String address;
+
 
     public User (String name, String email) {
         this.name = name;
@@ -33,6 +35,14 @@ public class User {
         this.email = email;
     }
 
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
     public String getPhoneNumber() {
         return phoneNumber;
     }
@@ -43,5 +53,11 @@ public class User {
         } else if (phoneNumber.length() == 8) {
             this.phoneNumber = phoneNumber;
         }
+    }
+
+    //sobreescribiendo un metodo
+    @Override //esto dice q no es propio de la clase user, sino que es un metodo extraido de la super clase
+    public String toString() {
+        return "User: " + name + ", Email: " + email + "\n,Addrees:" + address + ", Phone:" + phoneNumber;
     }
 }

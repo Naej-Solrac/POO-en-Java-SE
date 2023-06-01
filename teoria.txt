@@ -33,3 +33,34 @@ public		*	*	   *	      *
 protected	*	*	   *	      
 default		*	*
 private		*
+
+getters y setters  //se encargan de validar los parametos o datos q se quieran asignar
+perminen leer y escribir los valores de las variables miembro 
+get obtener, set,o actualizar poner el dato de la variable
+
+Clases Wrapper / objeto primitivo
+Byte,Short, Integer, Long, Float, Double, Character, Boolean, String
+
+clases anidadas ...
+
+herencia:super clase o clase padre, sirve para reutilizar
+se utiliza usando extend en la clase hija 
+no se permite herencia multiple 
+super = se refiere a la super clase  > this = variable de la misma clase que se usa
+
+Polimorfismo es:
+sobreescritura: modificar  los metodos o agregarlos con comportamientos diferentes de alguna clase hija, final o static no se pueden sobreescribir
+La capa de modelos, son los modelos moldeados
+
+Interfaces es un tipo similar a una clase donde definiremos metodos que pueden ser redundantes en nuestra familia de clases como agendar
+entonces, podriamos usar polimorfismo pero recordemos q este se usa porque se hereda algo que tienen en comun y se agrega o modifica, pero
+en interfaces se tiene q poner metodos completamente diferentes
+
+public interface ISchedulable {
+    schedule (Date date, String Time);
+}
+public class AppointmentDoctor {
+    implementes Ischedulable {
+
+    }
+}

@@ -1,4 +1,4 @@
-public class Patient extends User{ //herencia
+public class Patient extends User { //herencia
     //atributos
     private String  birthday, blood;
     private double weight, height;
@@ -26,10 +26,6 @@ public class Patient extends User{ //herencia
     }
 
 
-    public void setPhoneNumber(String phoneNumber) {
-
-    }
-
     public String getBirthday() {
         return birthday;
     }
@@ -46,4 +42,8 @@ public class Patient extends User{ //herencia
         this.blood = blood;
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + "\nAge: " + birthday + "\nWeight: " + getWeight() + "\nheight: " + getHeight() + "\nblood: " + blood;
+    }
 }

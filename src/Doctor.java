@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Doctor extends User{ //herencia
+public class Doctor extends User { //herencia
     private String speciality;
 
     public String getSpeciality() {
@@ -29,6 +29,13 @@ public class Doctor extends User{ //herencia
         return availableAppointments;
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + "Doctor{" +
+                "speciality='" + speciality + '\'' +
+                ", availableAppointments=" + availableAppointments.toString() +
+                '}';
+    }
 
     public static class AvailableAppointment {
         private int id_availableAppointment;
@@ -64,6 +71,12 @@ public class Doctor extends User{ //herencia
             this.time = time;
         }
 
-
+        @Override
+        public String toString() {
+            return "AvailableAppointment{" +
+                    "date=" + date +
+                    ", time='" + time + '\'' +
+                    '}';
+        }
     }
 }
