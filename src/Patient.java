@@ -1,8 +1,6 @@
-public class Patient {
+public class Patient extends User{ //herencia
     //atributos
-    int id;
-    private String name;
-    private String email, address, phoneNumber, birthday, blood;
+    private String  birthday, blood;
     private double weight, height;
 <<<<<<< HEAD
     Patient (String name, String email) {
@@ -18,8 +16,7 @@ public class Patient {
 =======
 
     Patient(String name, String email) {
-        this.name = name;
-        this.email = email;
+        super(name, email); //herencia
     }
 
     //54.5
@@ -41,43 +38,9 @@ public class Patient {
         this.height = height;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
 
     public void setPhoneNumber(String phoneNumber) {
+<<<<<<< HEAD
 <<<<<<< HEAD
         if (phoneNumber.length() > 9 ) {
             System.out.println("el num debe ser 9 digitos como max");
@@ -90,6 +53,9 @@ public class Patient {
             this.phoneNumber = phoneNumber;
 >>>>>>> c611dc37aa48ad704f697118cc90abf6c3e2bb82
         }
+=======
+
+>>>>>>> 9d41e892488f3a1a99426dd161d333715954debd
     }
 
     public String getBirthday() {
