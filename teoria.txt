@@ -41,3 +41,14 @@ get obtener, set,o actualizar poner el dato de la variable
 Clases Wrapper / objeto primitivo
 Byte,Short, Integer, Long, Float, Double, Character, Boolean, String
 
+clases anidadas ...
+
+herencia:super clase o clase padre, sirve para reutilizar
+se utiliza usando extend en la clase hija 
+no se permite herencia multiple 
+super = se refiere a la super clase  > this = variable de la misma clase que se usa
+
+Polimorfismo
+
+sobreescritura: modificar los metodos de alguna clase hija, final o static no se pueden sobreescribir
+
