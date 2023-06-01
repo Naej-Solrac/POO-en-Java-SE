@@ -24,8 +24,6 @@ public class Patient extends User { //herencia
     public void setHeight(double height) {
         this.height = height;
     }
-
-
     public String getBirthday() {
         return birthday;
     }
@@ -41,9 +39,9 @@ public class Patient extends User { //herencia
     public void setBlood(String blood) {
         this.blood = blood;
     }
-
     @Override
     public String toString() {
         return super.toString() + "\nAge: " + birthday + "\nWeight: " + getWeight() + "\nheight: " + getHeight() + "\nblood: " + blood;
     }
+
 }
