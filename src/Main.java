@@ -1,7 +1,6 @@
-
+import model.Doctor;
+import model.Patient;
 import java.util.Date;
-
-import static UI.UIMenu.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,9 +12,6 @@ public class Main {
 
         Patient patient = new Patient("ale","ale@gmail.com");
         System.out.println(patient);
-
-
-
 
     }
 }

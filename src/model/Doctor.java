@@ -1,3 +1,5 @@
+package model;
+
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -12,7 +14,7 @@ public class Doctor extends User { //herencia
         this.speciality = speciality;
     }
 
-    Doctor (String name, String email) {
+    public Doctor(String name, String email) {
         super(name, email); //herencia
         System.out.println("el nombre del doc es: " + name);
 
@@ -31,7 +33,7 @@ public class Doctor extends User { //herencia
 
     @Override
     public String toString() {
-        return super.toString() + "Doctor{" +
+        return super.toString() + "model.Doctor{" +
                 "speciality='" + speciality + '\'' +
                 ", availableAppointments=" + availableAppointments.toString() +
                 '}';

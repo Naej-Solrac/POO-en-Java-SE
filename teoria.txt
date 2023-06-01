@@ -17,7 +17,7 @@ analisar: observar -> graficar -> programar
 el UML nos ayudara a graficar
 
 declarar e instanciar un objeto
-Doctor myDoctor = new Doctor();
+model.Doctor myDoctor = new model.Doctor();
 myDoctor.name = "jean gonzales";
 myDoctor.showName();
 
@@ -64,4 +64,7 @@ public class AppointmentDoctor {
 
     }
 }
+
+poder añadirle comportamientos a una clase se le llama composicion de interfaces en clases, abstraer todos los metodos de una clase,
+comprimirlos o enpasularlas para luego reutilizarlas en diferentes clases
 

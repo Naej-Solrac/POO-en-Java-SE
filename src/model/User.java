@@ -1,3 +1,5 @@
+package model;
+
 public class User {
     private int id;
     private String name;
@@ -58,6 +60,6 @@ public class User {
     //sobreescribiendo un metodo
     @Override //esto dice q no es propio de la clase user, sino que es un metodo extraido de la super clase
     public String toString() {
-        return "User: " + name + ", Email: " + email + "\n,Addrees:" + address + ", Phone:" + phoneNumber;
+        return "model.User: " + name + ", Email: " + email + "\n,Addrees:" + address + ", Phone:" + phoneNumber;
     }
 }

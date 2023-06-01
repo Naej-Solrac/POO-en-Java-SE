@@ -1,9 +1,13 @@
+package model;
+
+import model.User;
+
 public class Patient extends User { //herencia
     //atributos
     private String  birthday, blood;
     private double weight, height;
 
-    Patient(String name, String email) {
+    public Patient(String name, String email) {
         super(name, email); //herencia
     }
 
