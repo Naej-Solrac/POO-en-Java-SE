@@ -1,4 +1,5 @@
 import model.Doctor;
+import model.ISchedulable;
 import model.Patient;
 import model.User;
 
@@ -18,5 +19,16 @@ public class Main {
         myDoctor.showDataUser();
         User user = new Patient("pablo","pablo@gmail.com");
         user.showDataUser();
+
+        // metodo anonimo //se usa mas en aplicativos android ejmplo onckick donde queremos que el comportamiento sea vigente solo en ese momento
+        User user1 = new User("Anahi", "anahi@gmail.com") {
+            @Override
+            public void showDataUser() {
+                System.out.println("doctor");
+                System.out.println("hospital: cruz verde");
+                System.out.println("departamento: gediatria");
+            }
+        };
+        user1.showDataUser();
     }
 }
