@@ -1,6 +1,6 @@
 package model;
 
-public class User {
+public abstract class User {
     private int id;
     private String name;
     private String email;
@@ -62,4 +62,7 @@ public class User {
     public String toString() {
         return "model.User: " + name + ", Email: " + email + "\n,Addrees:" + address + ", Phone:" + phoneNumber;
     }
+
+    public abstract void showDataUser(); //creamos clase abstracta y la usamos en doctor, nurse, patient
+
 }

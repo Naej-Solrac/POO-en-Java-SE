@@ -39,6 +39,12 @@ public class Doctor extends User { //herencia
                 '}';
     }
 
+    @Override
+    public void showDataUser() { //uso de clase abstracta
+        System.out.println("Empleado del hospital: rebagliati");
+        System.out.println("departamento: cardiologia");
+    }
+
     public static class AvailableAppointment {
         private int id_availableAppointment;
         private Date date;

@@ -68,3 +68,4 @@ public class AppointmentDoctor {
 poder añadirle comportamientos a una clase se le llama composicion de interfaces en clases, abstraer todos los metodos de una clase,
 comprimirlos o enpasularlas para luego reutilizarlas en diferentes clases
 
+clases anstractas

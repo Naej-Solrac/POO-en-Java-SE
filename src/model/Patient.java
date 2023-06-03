@@ -48,4 +48,10 @@ public class Patient extends User { //herencia
         return super.toString() + "\nAge: " + birthday + "\nWeight: " + getWeight() + "\nheight: " + getHeight() + "\nblood: " + blood;
     }
 
+    @Override
+    public void showDataUser() { //uso de clase bastracta
+        System.out.println("Paciente" + getName());
+        System.out.println("Historia completa del paciente");
+    }
+
 }

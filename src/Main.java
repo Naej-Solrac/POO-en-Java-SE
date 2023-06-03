@@ -1,5 +1,7 @@
 import model.Doctor;
 import model.Patient;
+import model.User;
+
 import java.util.Date;
 
 public class Main {
@@ -13,5 +15,8 @@ public class Main {
         Patient patient = new Patient("ale","ale@gmail.com");
         System.out.println(patient);
 
+        myDoctor.showDataUser();
+        User user = new Patient("pablo","pablo@gmail.com");
+        user.showDataUser();
     }
 }
