@@ -11,7 +11,7 @@ public class Doctor extends User { //herencia
     public String getSpeciality() {
         return speciality;
     }
-
+    private ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
     public void setSpeciality(String speciality) {
         this.speciality = speciality;
     }
@@ -22,7 +22,7 @@ public class Doctor extends User { //herencia
     }
     //comportamientos
 
-    ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>(); //coleccion
+
     public void addAvailableAppointment (String date, String time) {
         availableAppointments.add ( new Doctor.AvailableAppointment(date, time) );
     }
@@ -68,10 +68,10 @@ public class Doctor extends User { //herencia
             this.id_availableAppointment = id_availableAppointment;
         }
 
-        public Date getDate() {
+        public Date getDate(String DATE) {
             return date;
         }
-        public String getDate(String DATE) {
+        public String getDate() {
             return format.format(date);
         }
 
