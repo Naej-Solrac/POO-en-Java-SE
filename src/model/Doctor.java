@@ -18,8 +18,6 @@ public class Doctor extends User { //herencia
 
     public Doctor(String name, String email) {
         super(name, email); //herencia
-        System.out.println("el nombre del doc es: " + name);
-
         this.speciality = speciality;
     }
     //comportamientos
